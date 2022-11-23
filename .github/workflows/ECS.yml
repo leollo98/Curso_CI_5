@@ -43,3 +43,12 @@ jobs:
         service: Servico_API-Go
         cluster: API-Go
         wait-for-service-stability: true
+        
+    - name: Requesição
+      continue-on-error: true
+      run: sleep 30s ; wget LB-API-Go-908865819.us-east-2.elb.amazonaws.com:8000/leo
+    
+    
+    
+    
+    
