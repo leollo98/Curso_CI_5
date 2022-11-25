@@ -16,3 +16,5 @@ jobs:
         aws-access-key-id: ${{ secrets.ID_CHAVE_ACESSO }}
         aws-secret-access-key: ${{ secrets.CHAVE_SECRETA }}
         aws-region: us-east-2
+        
+    - run: git clone https://github.com/leollo98/Infra_CI
