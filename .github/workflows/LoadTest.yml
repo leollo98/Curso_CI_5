@@ -56,3 +56,4 @@ jobs:
     - name: Roda teste de carga
       run: sleep 60s ; locust -f locustfile.py --headless -u 10 -r 5 --run-time 60s -H http://${{ steps.URL.outputs.stdout }}
       
+    - run: terraform -chdir=Infra_CI/env/Homolog destroy -auto-approve
